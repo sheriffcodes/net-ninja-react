@@ -1,22 +1,13 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-const title = 'welcome to the new blog';
-const likes = 50;
-const person = { name: "Yunus"}
-const googleLink = "https://google.com"
-
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{ title }</h1>
-        <p>Liked {likes} times</p>
-        <p>My name is {person.name}</p>
-
-        <a href={googleLink}> Google site </a>
-        
-        {/* direct input */}
-        <p>count {[1,',', 2, 'and', 3]}</p>
+        <Home />
       </div>
     </div>
   );
